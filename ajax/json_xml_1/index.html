@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo2</title>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <style>
+    thead {
+        font-weight: bold;
+    }
+    td {
+        padding: 0 10px;
+    }
+    #total td {
+        padding-top: 20px;
+        font-weight: bold;
+    }
+    tbody td:nth-child(4) {
+        text-align: right;
+    }
+    
+    tbody td:nth-child(4):before {
+        content: '$ ';
+    }
+    </style>
+</head>
+<body>
+    <h1>Usuarios</h1>
+    <ul id="usuarios"></ul>
+    <h3>Deuda</h3>
+	<table>
+        <thead>
+            <tr>
+                <td>Nombre</td>
+                <td>Dirección</td>
+                <td>Teléfono</td>
+                <td>Deuda</td>
+            </tr>
+        </thead>
+        <tbody id="deuda"></tbody>
+    </table>
+</body>
+</html>
